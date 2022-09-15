@@ -32,7 +32,7 @@ function App() {
        <div>
         <Routes>
           <Route exact path="/login" element={<Login/>}/>       
-          <Route exact path="/" element={<LoadingToRedirect/>}/>  
+          <Route exact path="/Currency-Converter/" element={<LoadingToRedirect/>}/>  
           <Route  path="/login/forgetPassword" element={<ForgotPassword/>}/>
           <Route  path="/login/home" element={<Home/>}/>
           <Route  path="login/register" element={<Register/>}/>         
