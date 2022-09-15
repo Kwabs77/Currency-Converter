@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+//import ExchangeSum from "./Components/ExchangeSum";
+import React,{useEffect} from "react";
+import {BrowserRouter,Routes ,Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import ForgotPassword from "./pages/ForgotPassword";
+import Register from "./pages/Register";
+//import Login from "./pages/Login";
+//import UserRoute from "./Components/UserRoute";
+import LoadingToRedirect from "./Components/LoadingToRedirect";
+import { useDispatch } from "react-redux";
+import {auth} from './firebase';
+import { setUser } from "./redux/action";
+
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(()=>{
+      auth.onAuthStateChanged((authUser) =>{
+          if(authUser){
+            dispatch(setUser(authUser))
+          } else{
+            dispatch(setUser(null))
+          }
+
+      })
+  },[dispatch])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+       <div>
+        <Routes>
+          <Route exact path="/login" element={<Login/>}/>       
+          <Route exact path="/" element={<LoadingToRedirect/>}/>  
+          <Route  path="/login/forgetPassword" element={<ForgotPassword/>}/>
+          <Route  path="/login/home" element={<Home/>}/>
+          <Route  path="login/register" element={<Register/>}/>         
+        </Routes>
+        </div>  
+    </BrowserRouter>
+   
+    </>
   );
 }
 
