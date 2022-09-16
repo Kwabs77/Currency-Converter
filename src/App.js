@@ -30,7 +30,7 @@ function App() {
     <>
     <BrowserRouter>
        <div>
-        <Routes>
+        <Routes basename='/Currency-Converter'>
           <Route exact path="/login" element={<Login/>}/>       
           <Route exact path="/Currency-Converter/" element={<LoadingToRedirect/>}/>
           <Route exact path="/" element={<LoadingToRedirect/>}/>           

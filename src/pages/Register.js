@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import {useNavigate,Link} from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import {registerInitiate} from "../redux/action"
 
 export default function Register() {
@@ -38,6 +39,7 @@ export default function Register() {
   
             e.preventDefault();
         if(password!==passwordConfirm){
+          toast.error('Your password differs! Please check again')
             return;
         }
         dispatch(registerInitiate(email,password,displayName));
@@ -100,6 +102,7 @@ export default function Register() {
      </Link>
      </button>
     </div>
+    <ToastContainer/>
  </div>
 
   )
