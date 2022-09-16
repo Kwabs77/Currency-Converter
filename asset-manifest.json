@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Currency-Converter/static/css/main.fd215c41.css",
-    "main.js": "/Currency-Converter/static/js/main.7938fbcd.js",
+    "main.js": "/Currency-Converter/static/js/main.4bd02d5a.js",
     "static/media/backgroundLogin.png": "/Currency-Converter/static/media/backgroundLogin.2ad7a8c6e236cb0445f6.png",
     "static/media/world.png": "/Currency-Converter/static/media/world.c3bf6e2dfad9e3e15e76.png",
     "static/media/logo.svg": "/Currency-Converter/static/media/logo.77835b00f581943f95867a74b90b8fa2.svg",
@@ -12,10 +12,10 @@
     "static/media/facebook.svg": "/Currency-Converter/static/media/facebook.229c75a01827343aef31ae916e2ec18a.svg",
     "static/media/icon-hamburger.svg": "/Currency-Converter/static/media/icon-hamburger.ff759b383d2eba91ee85344a9e81a892.svg",
     "main.fd215c41.css.map": "/Currency-Converter/static/css/main.fd215c41.css.map",
-    "main.7938fbcd.js.map": "/Currency-Converter/static/js/main.7938fbcd.js.map"
+    "main.4bd02d5a.js.map": "/Currency-Converter/static/js/main.4bd02d5a.js.map"
   },
   "entrypoints": [
     "static/css/main.fd215c41.css",
-    "static/js/main.7938fbcd.js"
+    "static/js/main.4bd02d5a.js"
   ]
 }
