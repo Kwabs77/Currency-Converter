@@ -24,7 +24,7 @@ const [isOpen, setIsOpen] = useState(false)
         </div>          
         <div className='to-the-end'>  
             <ul>
-                <li><button id='login' onClick={handleAuth}><Link to = '/' className='login'>Log Out </Link></button></li>
+                <li><button id='login' onClick={handleAuth}><Link to = '/Currency-Converter/' className='login'>Log Out </Link></button></li>
             
             </ul>
         </div>
