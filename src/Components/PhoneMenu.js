@@ -17,7 +17,7 @@ export default function PhoneMenu({onHandleClick,isOpen, handleAuth}) {
                 <li onClick={()=>{onHandleClick(!isOpen)}}><Link  className='phoneHover' to ='#currency' smooth>Currency API</Link></li>
                 <li><div className="phoneLine"></div></li>
                 <li onClick={()=>{onHandleClick(!isOpen)}}><Link className='phoneHover' to='#amali' smooth>Sponsors</Link> </li>
-                <li><button  onClick={handleAuth}><Link to = '/Currency-Converter/'  className='phoneHover'>Log Out </Link></button></li> 
+                <li><button  onClick={handleAuth}><Link to = '/'  className='phoneHover'>Log Out </Link></button></li> 
             </ul> 
     </div>
    
