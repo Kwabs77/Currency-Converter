@@ -28,9 +28,9 @@ function App() {
   },[dispatch])
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter  basename='/Currency-Converter'>
        <div>
-        <Routes basename='/Currency-Converter'>
+        <Routes>
           <Route exact path="/login" element={<Login/>}/>       
           <Route exact path="/Currency-Converter/" element={<LoadingToRedirect/>}/>
           <Route exact path="/" element={<LoadingToRedirect/>}/>           
