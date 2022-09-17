@@ -1001,6 +1001,11 @@ body {
     font-size: 12.5px;
   }
 }
+@media screen and (max-width: 338px) {
+  .rate {
+    height: 420px;
+  }
+}
 @media screen and (max-width: 300px) {
   .phone {
     width: 90vw;
@@ -1021,7 +1026,7 @@ body {
     font-size: 5vw;
   }
   .rate {
-    height: 550px;
+    height: 510px;
   }
   .intro {
     font-size: 10px;
@@ -1037,6 +1042,9 @@ body {
   }
   .options {
     width: 60px;
+  }
+  .value {
+    top: 10px;
   }
   .about {
     font-size: 10px;
